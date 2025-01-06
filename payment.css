@@ -1,0 +1,141 @@
+/* Payment Styles */
+#payment {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#payment:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+#payment h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+#payment-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3b3ee2;
+    box-shadow: 0 0 0 2px rgba(59, 62, 226, 0.1);
+}
+
+#payment-summary {
+    background-color: #f5f6f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+#payment-summary h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#payment-summary p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+#total-amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3b3ee2;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3b3ee2;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.book-btn:hover {
+    background-color: #2f31b4;
+    transform: translateY(-2px);
+}
+
+.book-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #payment {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #payment h2 {
+        font-size: 28px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    #total-amount {
+        font-size: 24px;
+    }
+}
+
+/* Add some animation to form inputs */
+@keyframes input-focus {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.form-group input:focus {
+    animation: input-focus 0.3s ease;
+}

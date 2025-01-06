@@ -1,0 +1,112 @@
+#confirmation {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-check-circle {
+    font-size: 64px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#confirmation h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#confirmation p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#booking-details {
+    background-color: #f5f6f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+#booking-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#booking-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#booking-details span {
+    font-weight: 600;
+    color: #3b3ee2;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3b3ee2;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+}
+
+.book-btn:hover {
+    background-color: #2f31b4;
+    transform: translateY(-2px);
+}
+
+.book-btn:active {
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    #confirmation {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #confirmation h2 {
+        font-size: 28px;
+    }
+
+    #confirmation p {
+        font-size: 16px;
+    }
+
+    #booking-details h3 {
+        font-size: 20px;
+    }
+
+    #booking-details p {
+        font-size: 14px;
+    }
+}
+
